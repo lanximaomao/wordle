@@ -9,7 +9,7 @@ This C++ project, namely wordle, is an interactive word guessing game designed t
 ## Language used
 [![Language used](https://skills.thijs.gg/icons?i=cpp)](https://skills.thijs.gg)
 
-<br>
+<bt>
 
 ## Usage
 **1- To compile the programme:**
