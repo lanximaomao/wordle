@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Wordle.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tpoho <tpoho@student.hive.fi>              +#+  +:+       +#+        */
+/*   By: lsun <lsun@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 14:13:16 by tpoho             #+#    #+#             */
-/*   Updated: 2023/08/02 17:03:27 by tpoho            ###   ########.fr       */
+/*   Updated: 2023/09/05 19:20:29 by lsun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,7 @@
 int Wordle::_how_many_words = 0;
 int Wordle::_found_the_correct_word = 0;
 
-Wordle::Wordle()
-{
-	// Empty on purpose
-}
+Wordle::Wordle() {}
 
 Wordle::~Wordle()
 {
@@ -38,7 +35,6 @@ int	Wordle::readDictionary()
 	{
 		return (0);
 	}
-
 	while (std::getline(input_file, input_line))
 	{
 		if (input_line.size() == 5)
@@ -53,7 +49,6 @@ int	Wordle::readDictionary()
 		chooseWord();
 		return (1);
 	}
-
 	return (0);
 }
 
@@ -111,7 +106,7 @@ void	Wordle::printStatus() const
 
 	for(; i < 6; ++i)
 	{
-		std::cout << "_ _ _ _ _" << std::endl; 
+		std::cout << "_ _ _ _ _" << std::endl;
 	}
 }
 
@@ -119,7 +114,7 @@ int	Wordle::hasGameEnded() const
 {
 	if (_found_the_correct_word)
 		return (1);
-	
+
 	if (_tried_words.size() >= 6)
 		return (1);
 
@@ -135,7 +130,7 @@ void	Wordle::printEndText() const
 		{
 			std::cout << static_cast<char>(std::toupper(_chosen_word[i]));
 		}
-		std::cout << " in " << _tried_words.size() << " guesses" << std::endl;	
+		std::cout << " in " << _tried_words.size() << " guesses" << std::endl;
 	} else
 	{
 		std:: cout << "You lost the game with word ";

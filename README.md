@@ -36,10 +36,10 @@ Wordle rules:
 
 ![Visulization](diagram/wordle.png)
 
-## If you need help
+## If you need help with playing wordle
 
 + [Wordle world helper](https://word.tips/wordle/)
 
-## Use with caution
+## If you enjoy playing wordle online
 
 + [Play wordle online](https://wordlewordle.org/)
